@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>월애(月愛) | 프리미엄 이모지 숍</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-group">
+                <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Luv</div>
+                <span class="logo-sub">Premium Custom Shop</span>
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <div class="nav-right" id="navRight">
+                <div class="nav-links">
+                    <a href="#pricing" onclick="closeMenu()">가격 가이드</a>
+                    <a href="#notice" onclick="closeMenu()">필독사항</a>
+                    <a href="#discord" onclick="closeMenu()">문의처</a>
+                </div>
+                <a href="https://discord.gg/luv-mxxn" target="_blank" class="nav-btn">실시간 상담</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="floating-action-box">
+        <div class="floating-text-group">
+            <p>질문이 있거나 빠른 주문을 원하시나요?</p>
+            <h4>월애 공식 디스코드 고객센터</h4>
+        </div>
+        <a class="floating-btn" href="https://discord.gg/luv-mxxn" target="_blank">
+            티켓 열기
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+        </a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-badge">Premium Discord Emoji & Banner Design</div>
+        <h1>월애(月愛)</h1>
+        <p>은은한 달빛 아래, 대화를 채우는 감성 커스텀 디자인</p>
+        <div class="hero-cta">
+            <a href="#pricing" class="btn-link">메뉴 및 가격 세부 보기</a>
+        </div>
+
+        <a href="#pricing" class="scroll-indicator">
+            스크롤하여 확인하기
+            <svg viewBox="0 0 24 24">
+                <path d="M6 9l6 6 6-6"></path>
+            </svg>
+        </a>
+    </section>
+
+    <div class="marquee-container">
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <span>🔥 <em>NOTICE:</em> 정밀 수작업 공정으로 조기 마감될 수 있습니다.</span>
+                <span>✨ <em>BENEFIT:</em> 3만 원 이상 대량 주문 시 당일 긴급 추가비용 파격 조율 혜택!</span>
+                <span>💬 <em>CS CENTER:</em> 실시간 입금 확인 및 상담은 디스코드 티켓으로 간편하게.</span>
+                <span>💎 <em>PREMIUM:</em> 하나뿐인 나만의 디자인, 고퀄리티 보장 라인업 구비.</span>
+
+                <span>🔥 <em>NOTICE:</em> 정밀 수작업 공정으로 조기 마감될 수 있습니다.</span>
+                <span>✨ <em>BENEFIT:</em> 3만 원 이상 대량 주문 시 당일 긴급 추가비용 파격 조율 혜택!</span>
+                <span>💬 <em>CS CENTER:</em> 실시간 입금 확인 및 상담은 디스코드 티켓으로 간편하게.</span>
+                <span>💎 <em>PREMIUM:</em> 하나뿐인 나만의 디자인, 고퀄리티 보장 라인업 구비.</span>
+            </div>
+            <div class="marquee-content">
+                <span>🔥 <em>NOTICE:</em> 정밀 수작업 공정으로 조기 마감될 수 있습니다.</span>
+                <span>✨ <em>BENEFIT:</em> 3만 원 이상 대량 주문 시 당일 긴급 추가비용 파격 조율 혜택!</span>
+                <span>💬 <em>CS CENTER:</em> 실시간 입금 확인 및 상담은 디스코드 티켓으로 간편하게.</span>
+                <span>💎 <em>PREMIUM:</em> 하나뿐인 나만의 디자인, 고퀄리티 보장 라인업 구비.</span>
+
+                <span>🔥 <em>NOTICE:</em> 정밀 수작업 공정으로 조기 마감될 수 있습니다.</span>
+                <span>✨ <em>BENEFIT:</em> 3만 원 이상 대량 주문 시 당일 긴급 추가비용 파격 조율 혜택!</span>
+                <span>💬 <em>CS CENTER:</em> 실시간 입금 확인 및 상담은 디스코드 티켓으로 간편하게.</span>
+                <span>💎 <em>PREMIUM:</em> 하나뿐인 나만의 디자인, 고퀄리티 보장 라인업 구비.</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="pricing">
+        <h2 class="section-title">멤버십 및 가격 가이드</h2>
+        <p class="section-subtitle">정교하고 깔끔하게 제작되는 월애의 시그니처 라인업입니다.</p>
+
+        <div class="price-container">
+            <div class="price-category hidden">
+                <span class="best-badge">인기</span>
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>기본 이모지</h3>
+                        <p class="card-desc">대화를 깔끔하게 장식해 줄 월애의 베이직 이모지 라인업입니다.</p>
+                    </div>
+                    <div class="card-price-box">
+                        <span class="price-label">판매가</span>
+                        <span class="price-amount">₩1,500</span>
+                    </div>
+
+                    <button class="detail-toggle-btn" onclick="toggleDetails(this)">
+                        세부 가격 목록 보기
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="card-detail-list">
+                        <div class="detail-item">
+                            <span class="detail-name">일반 / 캐릭터 이모지</span>
+                            <span class="detail-val">₩1,500</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">3피스 이상 이모지</span>
+                            <span class="detail-val">₩2,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">커플 이모지 세트</span>
+                            <span class="detail-val">₩2,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">유료 하트 & 데코<span class="detail-subtext">개당 추가 비용</span></span>
+                            <span class="detail-val">₩500</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://discord.gg/luv-mxxn" target="_blank" class="card-btn">주문 신청하기</a>
+            </div>
+
+            <div class="price-category hidden">
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>기본 배너</h3>
+                        <p class="card-desc">개인 프로필이나 커플용으로 안성맞춤인 고품격 배너 라인업입니다.</p>
+                    </div>
+                    <div class="card-price-box">
+                        <span class="price-label">판매가</span>
+                        <span class="price-amount">₩2,500</span>
+                    </div>
+
+                    <button class="detail-toggle-btn" onclick="toggleDetails(this)">
+                        세부 가격 목록 보기
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="card-detail-list">
+                        <div class="detail-item">
+                            <span class="detail-name">문구 배너<span class="detail-subtext">커플 배너 포함</span></span>
+                            <span class="detail-val">₩2,500</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">캐릭터 배너</span>
+                            <span class="detail-val">₩3,000</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://discord.gg/luv-mxxn" target="_blank" class="card-btn">주문 신청하기</a>
+            </div>
+
+            <div class="price-category hidden">
+                <span class="best-badge">추천</span>
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>프리미엄 주문제작</h3>
+                        <p class="card-desc">원하는 콘셉트를 1:1 커스텀으로 정교하게 실현해 드립니다.</p>
+                    </div>
+                    <div class="card-price-box">
+                        <span class="price-label">시작 가격</span>
+                        <span class="price-amount">₩3,000 ~</span>
+                    </div>
+
+                    <button class="detail-toggle-btn" onclick="toggleDetails(this)">
+                        세부 가격 목록 보기
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="card-detail-list">
+                        <div class="detail-item">
+                            <span class="detail-name">이모지 주문 제작<span class="detail-subtext">개수 추가 시 개당
+                                    +1,000원</span></span>
+                            <span class="detail-val">₩3,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">하트 & 데코 제작<span class="detail-subtext">최대 10색 / 색상 추가시
+                                    +300원</span></span>
+                            <span class="detail-val">₩5,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">문구 배너 제작<span class="detail-subtext">개수 추가 시 개당
+                                    +2,000원</span></span>
+                            <span class="detail-val">₩5,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">캐릭터 배너 제작<span class="detail-subtext">개수 추가 시 개당
+                                    +2,000원</span></span>
+                            <span class="detail-val">₩6,000 ~</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://discord.gg/luv-mxxn" target="_blank" class="card-btn">맞춤 상담하기</a>
+            </div>
+
+            <div class="price-category hidden">
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>패키지 & 고정 멤버</h3>
+                        <p class="card-desc">종합 세트 구성 및 장기 고정 멤버를 위한 특별 혜택 구성입니다.</p>
+                    </div>
+                    <div class="card-price-box">
+                        <span class="price-label">특별가</span>
+                        <span class="price-amount">₩15,000 ~</span>
+                    </div>
+
+                    <button class="detail-toggle-btn" onclick="toggleDetails(this)">
+                        세부 가격 목록 보기
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="card-detail-list">
+                        <div class="detail-item">
+                            <span class="detail-name">이모지 전체 제작<span class="detail-subtext">약 50개 풀 세트 구성</span></span>
+                            <span class="detail-val">₩40,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">배너 전체 제작<span class="detail-subtext">약 50개 풀 세트 구성</span></span>
+                            <span class="detail-val">₩50,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-name">배너 & 이모지 고정 멤버</span>
+                            <span class="detail-val">₩15,000</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://discord.gg/luv-mxxn" target="_blank" class="card-btn">패키지 구매하기</a>
+            </div>
+
+            <p class="price-notice">* 모든 작업물은 제작자의 판단 하에 일부 가격 조정이 있을 수 있습니다.</p>
+        </div>
+    </section>
+
+    <section id="notice">
+        <h2 class="section-title">이용 동의 및 필독사항</h2>
+        <p class="section-subtitle">안전하고 올바른 저작권 이용을 위해 주문 전 꼭 읽어주세요.</p>
+
+        <div class="notice-grid">
+            <div class="notice-card hidden">
+                <h4>작업 및 마감 안내</h4>
+                <ul>
+                    <li>모든 구매 작업물은 <strong>당일 마감 ~ 최대 2주 내</strong>에 순차 전달됩니다.</li>
+                    <li>주제작(주문제작) 건은 퀄리티 조율을 위해 마감이 조금 더 소요될 수 있습니다.</li>
+                    <li><strong>당일 마감 긴급 요청시 기존 가격의 2배(X2)</strong>가 적용됩니다. (단, 3만 원 이상 구매 시 유연하게 할인 혜택 적용)</li>
+                </ul>
+            </div>
+
+            <div class="notice-card hidden">
+                <h4>공개 서버 이용 규칙</h4>
+                <ul>
+                    <li>이모지 구매 및 주문제작 건을 공개 서버용으로 사용할 경우 추가금이 발생합니다.</li>
+                    <li><strong>이모지 전용 서버 등록 시:</strong> 기본금 +5,000원 추가</li>
+                    <li><strong>그 외 일반 서버 등록 시:</strong> 디자인당 +15,000원 추가</li>
+                    <li>서버에 등록하여 사용하실 때는 이모지 네임에 <strong>꼭 'XJ' 문구를 포함</strong>해 주셔야 합니다.</li>
+                </ul>
+            </div>
+
+            <div class="notice-card warning hidden" style="grid-column: 1 / -1;">
+                <h4>저작권 위반 및 무단 도용 경고 (적발 시 10배 변상 법적 조치)</h4>
+                <ul>
+                    <li>이모지 이름에 <strong>'XJ'를 누락하고 사용</strong>하는 행위는 변상 사유가 됩니다.</li>
+                    <li>제작물 구매 없이 <strong>무단 도용(뽀려가기)</strong>하거나, 개인용으로 구매 후 <strong>공개적 무단 사용 시 정가의 10배를 변상</strong>해야
+                        합니다.</li>
+                    <li>서버에 임의 등록한 뒤 타인에게 <strong>재판매 및 파일을 양도하는 행위</strong>는 절대 불가하며 변상 사유에 해당합니다.</li>
+                    <li>모든 제작물은 <strong>'월애' 채널에 참가 중인 상태에서만 유효</strong>합니다. 채널을 퇴장하실 경우 해당 제작물 권한이 회수되며 다른 용도로 재사용될 수
+                        있습니다.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="discord">
+        <div class="contact-box hidden">
+            <p>정식 주문 및 라이선스 문의</p>
+            <h3>카카오뱅크 1234-5678-9012</h3>
+            <a class="btn" href="https://discord.gg/luv-mxxn" target="_blank">디스코드 티켓 생성하기</a>
+            <p style="font-size: 13px; margin-top: 15px; color: #9c8e81;">* 입금 완료 후 디스코드 채널에서 티켓을 열어주시면 빠른 처리가 가능합니다.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 20px;">
+            Copyright © 2026 Luvmoon(月愛). All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
