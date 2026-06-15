@@ -239,7 +239,7 @@ nav .nav-links a:hover {
 
     nav:hover .nav-btn {
         font-size: clamp(0px, 3vw, 28px) !important;
-        padding: clamp(14px, 3vw, 28px) !important;
+        /*padding: clamp(14px, 3vw, 28px) !important;*/
         /* [핵심 2] 아예 한 줄로만 나오게 강제 (선택 사항) */
         white-space: nowrap;
     }
@@ -646,6 +646,7 @@ section {
 .section-title {
     font-size: 42px;
     font-weight: 700;
+    letter-spacing: 0.05em;
     text-align: center;
     margin-bottom: 14px;
     color: #36291c;
@@ -933,7 +934,7 @@ section {
 }
 
 /* 타블렛 및 모바일 환경을 위한 미디어쿼리 분리 */
-@media (max-width: 900px) {
+@media (max-width: 999px) {
     .notice-grid {
         grid-template-columns: 1fr;
         /* 가로폭이 좁아지면 바둑판 배열을 세로로 큼직하게 1열 정렬 */
