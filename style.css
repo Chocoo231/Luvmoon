@@ -223,7 +223,7 @@ nav .nav-links a:hover {
     }
 
     nav:hover .logo {
-        font-size: clamp(0px, 10vw, 80px) !important;
+        font-size: clamp(0px, 10vw, 50px) !important;
         color: #81351e !important;
     }
 
@@ -238,7 +238,7 @@ nav .nav-links a:hover {
     }
 
     nav:hover .nav-btn {
-        font-size: clamp(0px, 3vw, 28px) !important;
+        font-size: clamp(0px, 3vw, 26px) !important;
         /*padding: clamp(14px, 3vw, 28px) !important;*/
         /* [핵심 2] 아예 한 줄로만 나오게 강제 (선택 사항) */
         white-space: nowrap;
