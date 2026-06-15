@@ -632,6 +632,7 @@ nav .nav-links a:hover {
 section {
     padding: 140px 20px;
     display: flex;
+    letter-spacing: 0.1em;
     flex-direction: column;
     align-items: center;
 }
@@ -1072,7 +1073,7 @@ footer {
 }
 
 /* 섹션 타이틀: 자간을 넓히고 얇고 우아하게 */
-.section-title {
+.section-title-forintro {
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.15em;
@@ -1082,7 +1083,7 @@ footer {
 }
 
 /* 섹션 서브타이틀: 가독성을 높이고 채도를 낮춤 */
-.section-subtitle {
+.section-subtitle-forintro {
     font-size: 1.1rem;
     font-weight: 300;
     color: #a0a0a0;
