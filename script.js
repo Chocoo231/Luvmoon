@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     const scrollPos = window.scrollY;
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 999) {
         return;
     }
 
