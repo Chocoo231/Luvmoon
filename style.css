@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Pretendard', sans-serif;
-    letter-spacing: -0.03em;
     scroll-behavior: smooth;
+    letter-spacing: -0.03em;
 }
 
 body {
@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    overscroll-behavior-y:auto;
 }
 
 /* ==========================================
@@ -26,7 +25,7 @@ nav {
     left: 0;
     width: 100%;
     padding: 0 100px;
-    height: 150px;
+    height: 90px;
     background: rgb(240, 240, 240);
     /*239 239 239*/
     backdrop-filter: saturate(180%) blur(20px);
@@ -36,13 +35,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.5, 1);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 nav .logo {
-    font-size: clamp(24px, 4vw, 50px) !important;
+    font-size: clamp(20px, 4vw, 30px) !important;
     color: #3a1515;
-    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); /*끝 속도, 전체 속도, 시작 속도, 강도*/
     white-space: nowrap;
 }
 
@@ -72,12 +71,12 @@ nav .nav-btn {
 
         /* [2단계] 중간 스크롤 상태 */
 nav.step-mid {
-    height: 100px;
+    height: 75px;
     background: rgba(255, 255, 255, 0.9);
 }
 
 nav.step-mid .logo {
-    font-size: 30px !important;
+    font-size: clamp(10px, 3vw, 25px) !important;
 }
 
 nav.step-mid .logo-sub {
@@ -105,7 +104,7 @@ nav.step-min {
 }
 
 nav.step-min .logo {
-    font-size: 19px !important;
+    font-size: clamp(5px, 3vw, 20px) !important;
 }
 
 nav.step-min .logo-sub {
@@ -210,7 +209,7 @@ nav .nav-links a:hover {
 
 @media (min-width: 1000px) {
     nav:hover {
-        height: clamp(165px, 10vw, 165px) !important;
+        height: clamp(50px, 10vw, 100px) !important;
         /* 최종 압축 상태에서 마우스 오버 시 전체 높이로 확장 */
         /* 바 전체 높이 확대 */
         padding: 0 clamp(10px, 10vw, 100px) !important;
@@ -224,23 +223,22 @@ nav .nav-links a:hover {
     }
 
     nav:hover .logo {
-        font-size: clamp(0px, 10vw, 60px) !important;
+        font-size: clamp(0px, 10vw, 32px) !important;
         color: #81351e !important;
     }
 
     nav:hover .logo-sub {
-        font-size: clamp(0px, 3vw, 16px) !important;
+        font-size: clamp(0px, 3vw, 15px) !important;
         padding: 6px 14px !important;
     }
 
     nav:hover .nav-links a {
-        font-size: clamp(0px, 3vw, 20px) !important;
+        font-size: clamp(0px, 3vw, 16px) !important;
         margin-left: 40px !important;
     }
 
     nav:hover .nav-btn {
-        font-size: clamp(0px, 3vw, 26px) !important;
-        /*padding: clamp(14px, 3vw, 28px) !important;*/
+        font-size: clamp(0px, 3vw, 20px) !important;
         /* [핵심 2] 아예 한 줄로만 나오게 강제 (선택 사항) */
         white-space: nowrap;
     }
@@ -311,7 +309,6 @@ nav .nav-links a:hover {
     nav .nav-links {
         display: flex;
         align-items: center;
-        flex-direction: column;
         gap: 2vw;
         /* 고정 픽셀(px) 대신 화면 크기에 비례하는 vw 단위를 쓰면 단계별로 훨씬 자연스럽습니다. */
     }
@@ -395,7 +392,7 @@ nav .nav-links a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(48px, 5vw, 76px);
+    font-size: 76px;
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 18px;
@@ -405,7 +402,7 @@ nav .nav-links a:hover {
 }
 
 .hero p {
-    font-size: clamp(16px, 3vw, 23px);
+    font-size: 23px;
     font-weight: 400;
     color: #7a6f65;
     margin-bottom: 36px;
@@ -634,7 +631,6 @@ nav .nav-links a:hover {
 section {
     padding: 140px 20px;
     display: flex;
-    letter-spacing: 0.1em;
     flex-direction: column;
     align-items: center;
 }
@@ -647,9 +643,9 @@ section {
 
 .section-title {
     font-size: 42px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+    font-weight: 300;
     text-align: center;
+    letter-spacing: 0.05em;
     margin-bottom: 14px;
     color: #36291c;
 }
@@ -970,7 +966,7 @@ section {
     }
 
     .contact-box h3 {
-        font-size: clamp(10px, 4vw, 20px);
+        font-size: 20px;
     }
 }
 
@@ -1144,4 +1140,46 @@ footer {
     font-weight: 300;
     word-break: keep-all;
     /* 한글 줄바꿈을 자연스럽게 */
+}
+
+/* --- 미디어 쿼리: 화면 너비가 999px 이하일 때 (태블릿 & 모바일) --- */
+
+@media (max-width: 999px) {
+    .section-title-forintro {
+        font-size: 2rem;
+        letter-spacing: -0.01em;
+    }
+
+    .section-subtitle-forintro {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr; /* 모바일에선 확실하게 1열로 세워 글자 공간 확보 */
+        gap: 24px;
+        padding: 0 24px;
+    }
+
+    .intro-card {
+        padding: 40px 32px;      /* 패딩이 너무 작아지면 고급스러움이 깨지므로 적당히 유지 */
+        border-radius: 14px;
+    }
+}
+
+/* 월애 포트폴리오 가로 꽉 채우는 배너 스타일 */
+.full-bleed-banner {
+    width: 100%;               /* 부모 너비의 100%를 차지 */
+    max-width: 1200px;
+    margin: 0 auto;                 /* 외부 여백 제거 */
+    padding: 0;                /* 내부 여백 제거 */
+    overflow: hidden;          /* 혹시 모를 이미지 넘침 방지 */
+    background-color: #fceef2; /* 이미지 로딩 전이나 미세한 틈새를 메워줄 부드러운 핑크빛 배경 */
+}
+
+.full-bleed-banner img {
+    width: 100%;               /* 화면 가로폭에 이미지를 100% 맞춤 */
+    height: auto;              /* 가로가 바뀔 때 세로 비율도 자동으로 유지 */
+    display: block;            /* 이미지 하단에 생기는 정체불명의 미세한 공백 방지 */
+    object-fit: cover;         /* 빈틈 없이 꽉 채우도록 설정 */
 }
