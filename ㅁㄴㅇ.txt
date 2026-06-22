@@ -1,0 +1,37 @@
+
+    <section id="portfolio" class="works-section">
+
+    <div class="works-header">
+
+        <span class="works-tag">
+            SELECTED WORKS
+        </span>
+
+        <h2>
+            월애의 작업물
+        </h2>
+
+        <p>
+            단순한 이모지와 배너를 넘어,
+            서버의 분위기와 감성을 완성하는 디자인.
+        </p>
+        <p>
+            실제 제작 사례를 통해 월애의 퀄리티를 확인해보세요.
+        </p>
+
+    </div>
+
+    <div class="works-showcase">
+
+        <img src="luvmoon.gif"
+             alt="월애 포트폴리오">
+
+    </div>
+
+    <div class="works-stats">
+
+        
+
+    </div>
+
+</section>
