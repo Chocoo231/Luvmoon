@@ -36,6 +36,7 @@ nav {
     align-items: center;
     z-index: 1000;
     transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    
 }
 
 nav .logo {
@@ -307,20 +308,23 @@ nav .nav-links a:hover {
     }
 
     nav .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 2vw;
-        /* 고정 픽셀(px) 대신 화면 크기에 비례하는 vw 단위를 쓰면 단계별로 훨씬 자연스럽습니다. */
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+}
 
-    nav .nav-links a {
-        margin: 0;
-        padding: 14px 0;
-        width: 100%;
-        text-align: center;
-        font-size: 16px !important;
-        border-bottom: 1px solid rgba(67, 53, 39, 0.04);
-    }
+nav .nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+
+    margin: 0;
+
+    border-bottom: 1px solid rgba(67, 53, 39, 0.166);
+}
 
     nav .nav-links a:last-child {
         border-bottom: none;
@@ -1060,7 +1064,8 @@ footer {
     }
 }
 
-/*
+
+
 /* 전체 섹션 레이아웃 */
 .intro {
     padding: 120px 20px;
@@ -1196,7 +1201,7 @@ footer {
     linear-gradient(
         180deg,
         #f7f7f7 0%,
-        #eeeeee 100%
+        #ffffff 100%
     );
 
     position: relative;
@@ -1207,6 +1212,7 @@ footer {
     border-top-right-radius: 80px;
 
     text-align: left;
+
 }
 
 /* 은은한 배경 장식 */
@@ -1366,18 +1372,12 @@ footer {
 
     padding: 1px;
 
-    background:
-    linear-gradient(
-        135deg,
-        rgba(255,255,255,.9),
-        rgba(0,0,0,.04)
-    );
 
-    -webkit-mask:
+    mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
 
-    -webkit-mask-composite: xor;
+    mask-composite: xor;
 
     pointer-events: none;
 }
