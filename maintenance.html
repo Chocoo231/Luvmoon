@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>月愛 | Maintenance</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background:
+                linear-gradient(180deg,
+                    #f7f7f7 0%,
+                    #ececec 100%);
+
+            font-family:
+                "Pretendard",
+                "Noto Sans KR",
+                sans-serif;
+
+            overflow: hidden;
+        }
+
+        /* 배경 장식 */
+
+        body::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 700px;
+            height: 700px;
+
+            top: -300px;
+            right: -200px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(rgba(0, 0, 0, .04),
+                    transparent 70%);
+        }
+
+        body::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            bottom: -200px;
+            left: -100px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(rgba(0, 0, 0, .03),
+                    transparent 70%);
+        }
+
+        .card {
+
+            position: relative;
+
+            width: min(90%, 800px);
+
+            background:
+                rgba(255, 255, 255, .75);
+
+            backdrop-filter: blur(20px);
+
+            border:
+                1px solid rgba(0, 0, 0, .06);
+
+            border-radius: 40px;
+
+            padding: 70px 50px;
+
+            text-align: center;
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, .06);
+        }
+
+
+        .section-divider {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin: 10px 100px 50px;
+        }
+
+        .section-divider .line {
+
+            width: 120px;
+
+            height: 1px;
+
+            background:
+                linear-gradient(90deg,
+                    transparent,
+                    rgba(0, 0, 0, .25),
+                    transparent);
+        }
+
+        .section-divider .divider-text {
+
+            font-size: 20px;
+
+            font-weight: 300;
+
+            letter-spacing: .25em;
+
+            color: #444;
+
+            padding: 10px 24px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(255, 255, 255, .7);
+
+            backdrop-filter: blur(12px);
+
+            border:
+                1px solid rgba(0, 0, 0, .06);
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, .04);
+        }
+
+        .logo {
+
+            font-size: 72px;
+
+            font-weight: 300;
+
+            color: #1d1d1f;
+
+            margin-bottom: 10px;
+
+            letter-spacing: -0.03em;
+        }
+
+        .sub {
+
+            color: #6e6e73;
+
+            font-size: 14px;
+
+            letter-spacing: .15em;
+
+            text-transform: uppercase;
+        }
+
+        .title {
+
+            margin-top: 40px;
+
+            font-size:
+                clamp(36px, 5vw, 70px);
+
+            font-weight: 250;
+
+            color: #1d1d1f;
+
+            letter-spacing: -0.04em;
+
+            line-height: 1.1;
+        }
+
+        .desc {
+
+            margin-top: 25px;
+
+            color: #6e6e73;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+        .notice {
+
+            margin-top: 40px;
+
+            display: inline-block;
+
+            padding: 12px 22px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(0, 0, 0, .04);
+
+            border:
+                1px solid rgba(0, 0, 0, .05);
+
+            color: #555;
+
+            font-size: 14px;
+        }
+
+        .footer {
+
+            margin-top: 50px;
+
+            color: #8a8a8f;
+
+            font-size: 13px;
+        }
+
+        .loader {
+
+            width: 60px;
+            height: 60px;
+
+            margin: 40px auto 0;
+
+            border-radius: 50%;
+
+            border:
+                2px solid rgba(0, 0, 0, .08);
+
+            border-top-color: #444;
+
+            animation:
+                spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media(max-width:768px) {
+
+            .card {
+
+                padding: 50px 25px;
+
+                border-radius: 28px;
+            }
+
+            .logo {
+
+                font-size: 52px;
+            }
+
+            .desc {
+
+                font-size: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="card">
+
+        <div class="section-divider">
+
+            <span class="line"></span>
+
+            <span class="divider-text">
+                月愛
+            </span>
+
+            <span class="line"></span>
+
+        </div>
+
+        <div class="logo">
+            月愛
+        </div>
+
+        <div class="sub">
+            Premium Custom Shop
+        </div>
+
+        <h1 class="title">
+            Site Under Maintenance
+        </h1>
+
+        <p class="desc">
+            보다 나은 서비스와 새로운 디자인을 위해
+            월애 사이트를 점검하고 있습니다.
+            잠시 후 다시 방문해주세요.
+        </p>
+
+        <div class="loader"></div>
+
+        <div class="notice">
+            현재 리뉴얼 작업 진행 중
+        </div>
+
+        <div class="footer">
+            © 2026 Luvmoon(月愛)
+        </div>
+
+    </div>
+
+</body>
+
+</html>

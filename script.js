@@ -1,3 +1,8 @@
+const maintenance = true; // 유지보수 모드 여부를 설정하는 변수
+
+if(maintenance){
+    location.href="maintenance.html";
+}
 
 // 스크롤 페이드인 인터랙션 스크립트
 const observer = new IntersectionObserver(entries => {
