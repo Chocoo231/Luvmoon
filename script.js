@@ -1,4 +1,4 @@
-const maintenance = true; // 유지보수 모드 여부를 설정하는 변수
+const maintenance = false; // 유지보수 모드 여부를 설정하는 변수
 
 if(maintenance){
     location.href="maintenance.html";
