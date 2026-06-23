@@ -1,4 +1,4 @@
-const maintenance = true; // 사이트 점검중 여부(true: 점검중, false: 정상 운영)
+const maintenance = false; // 사이트 점검중 여부(true: 점검중, false: 정상 운영)
 
 if(maintenance){
     location.href="maintenance.html";
