@@ -7,6 +7,12 @@
     letter-spacing: -0.03em;
 }
 
+/* 히트박스같은 느낌(디버깅 용)*/
+/*
+*{
+    outline:1px solid red;
+}
+*/
 body {
     background-color: #fbf9f6;
     color: #2b2621;
