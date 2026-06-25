@@ -59,12 +59,29 @@ nav .logo-sub {
     white-space: nowrap;
 }
 
+/* 네비게이션 링크들을 감싸고 있는 부모 요소 선택 */
+nav .nav-links {
+    display: flex;
+    flex-direction: row;       /* 가로 정렬 유지 */
+    flex-wrap: nowrap;         /* 절대 아래 줄로 떨어지지 않게 설정 */
+    overflow-x: auto;          /* 넘치는 부분은 가로 스크롤 생성 */
+    -webkit-overflow-scrolling: touch; /* 모바일에서 부드러운 스크롤 */
+    
+    /* (선택) 스크롤바를 숨기고 싶다면 아래 코드 추가 */
+    scrollbar-width: none;     /* Firefox */
+}
+
+nav .nav-links::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+}
+
 nav .nav-links a {
-    font-size: clamp(14px, 3vw, 18px) !important;
+    font-size: clamp(5px, 3vw, 18px) !important;
     /* margin-left: 36px; */
     transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
     white-space: nowrap;
 
+    /*flex-shrink: 1;*/
 }
 
 nav .nav-btn {
