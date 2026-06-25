@@ -179,6 +179,8 @@ body::after {
 
     box-shadow:
         0 8px 30px rgba(0, 0, 0, .04);
+    
+    word-break: keep-all;
 }
 
 .logo {
@@ -238,6 +240,8 @@ body::after {
     letter-spacing: -0.04em;
 
     line-height: 1.1;
+    
+    word-break: keep-all;
 }
 
 .desc {
@@ -251,6 +255,7 @@ body::after {
         clamp(13px, 2vw, 18px);
 
     line-height: 1.8;
+    word-break: keep-all;
 }
 
 .notice {
@@ -287,6 +292,8 @@ body::after {
 
     font-size:
         clamp(10px, 1.3vw, 13px);
+    
+    word-break: keep-all;
 }
 
 .loader {
